@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv Chavan - Portfolio</title>
+    <meta name="description" content="Portfolio of Atharv Chavan - Student Developer, Data Scientist & Cybersecurity Enthusiast">
+    <meta name="keywords" content="Atharv Chavan, Portfolio, Developer, Data Scientist, Cybersecurity, AI">
+    
+    <!-- Open Graph / Social Media Preview Tags -->
+    <meta property="og:title" content="Atharv Chavan | Portfolio">
+    <meta property="og:description" content="Student Developer | Data Scientist | Cybersecurity Enthusiast. Explore my projects and journey!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/profile-pic.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="/profile-pic.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="scroll-container">
+        <canvas id="sequence-canvas"></canvas>
+    </div>
+
+    <!-- UI Overlay Layer -->
+    <div class="ui-layer">
+        
+        <!-- Header -->
+        <header class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-code"></i> ATHARV <span>CHAVAN</span>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="active">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SKILLS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#experience">JOURNEY</a>
+                <a href="#contact">CONNECT</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-btn">LET'S TALK <i class="fa-solid fa-arrow-right"></i></a>
+        </header>
+
+        <!-- Social Sidebar -->
+        <aside class="social-sidebar">
+            <a href="https://www.linkedin.com/in/atharv-chavan-225613307/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/chavanatharv24-a11y" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </aside>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <p class="greeting">HELLO, I'M <span class="line"></span></p>
+                    <h1 class="main-title">ATHARV <span class="highlight">CHAVAN</span></h1>
+                    <h2 class="subtitle">STUDENT DEVELOPER | DATA SCIENTIST | CYBERSECURITY ENTHUSIAST</h2>
+                    <p class="description">
+                        I build accessible, high-performance digital experiences and intelligent algorithms — exploring the future of tech. Check out my work in building the future of applied AI and Cybersecurity products!
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">VIEW MY WORK <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">LET'S CONNECT <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item glass-card">
+                        <h3>5+</h3>
+                        <p>PROJECTS COMPLETED</p>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <h3>10+</h3>
+                        <p>TECH STACKS</p>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <h3>20+</h3>
+                        <p>GITHUB COMMITS</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <div class="section-header">
+                    <span class="small-heading">ABOUT ME</span>
+                    <h2>Building Skills. Building Products. Building for Impact.</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text glass-card">
+                        <p>I am currently pursuing dual degrees: a B.Sc. in Computer Science at Bharati Vidyapeeth Deemed to be University, and a BS in Data Science and Applications at IIT Madras. Passionate about software engineering, AI, and cybersecurity. I specialize in building Data-driven Web Applications and ML models. My goal is to use my technical expertise to build scalable and impactful solutions that make a positive difference in society.</p>
+                        <ul class="check-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Currently learning: Cloud Computing, Deep Learning, Pen Testing</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Passionate about: Open Source, Hackathons, Tech Communities</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Exploring: Quantum Computing, Brain-Computer Interfaces</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">VIEW RESUME <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="about-visuals">
+                        <div class="profile-image-wrapper">
+                            <img src="/profile-pic.jpg" alt="Atharv Chavan" class="profile-image">
+                        </div>
+                        <div class="freelance-badge glass-card">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>Dual Degree Student<br>BVP & IIT Madras</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expertise Section -->
+            <section id="services" class="expertise">
+                <div class="section-header center">
+                    <span class="small-heading">MY SKILLS</span>
+                    <h2>My Expertise</h2>
+                </div>
+                <div class="expertise-grid">
+                    <div class="expertise-card glass-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-code"></i></div>
+                        <h3>Software Development</h3>
+                        <p>Building secure, scalable, and responsive web apps using modern frameworks and technologies.</p>
+                    </div>
+                    <div class="expertise-card glass-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-database"></i></div>
+                        <h3>Data Science</h3>
+                        <p>Working with Python, Pandas, NumPy, scikit-learn for data analysis, modeling, and insights.</p>
+                    </div>
+                    <div class="expertise-card glass-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI & ML</h3>
+                        <p>Applied AI modeling, natural language processing, computer vision, and building AI-driven solutions.</p>
+                    </div>
+                    <div class="expertise-card glass-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-puzzle-piece"></i></div>
+                        <h3>Problem Solving</h3>
+                        <p>Analytical and logical thinking approach to tackle complex coding challenges and system architectures.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects">
+                <div class="section-header">
+                    <span class="small-heading">FEATURED WORK</span>
+                    <h2>Selected Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <h3>AgriTech AI</h3>
+                            <p>Developed an AI-powered system for early crop disease detection using Deep Learning (CNNs), helping farmers increase yield and reduce loss.</p>
+                            <div style="margin-top: 10px; font-size: 0.8rem; color: var(--primary);">React • Node • MySQL • TensorFlow</div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <h3>Offshore Copilot — SIH 2023</h3>
+                            <p>Built a dashboard for real-time monitoring of offshore oil rigs, predicting equipment failures using IoT sensor data and machine learning.</p>
+                            <div style="margin-top: 10px; font-size: 0.8rem; color: var(--primary);">ReactJS • NodeJS • MySQL</div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <h3>Jarvis AI</h3>
+                            <p>An advanced AI voice assistant using Python and GPT APIs capable of web scraping, sending emails, and automating desktop tasks.</p>
+                            <div style="margin-top: 10px; font-size: 0.8rem; color: var(--primary);">Python • OpenAI API • SpeechRec</div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <h3>Attack Surface Monitor</h3>
+                            <p>Created a comprehensive security tool to scan and monitor organizational assets for vulnerabilities and open ports, with automated reporting.</p>
+                            <div style="margin-top: 10px; font-size: 0.8rem; color: var(--primary);">Python • Bash • Docker</div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <h3>CityHack — Data Visualization Dashboard</h3>
+                            <p>Interactive dashboard visualizing traffic and pollution data across major cities to help urban planners optimize resource allocation.</p>
+                            <div style="margin-top: 10px; font-size: 0.8rem; color: var(--primary);">Python • Tableau • Data Analysis</div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-info">
+                            <h3>CyberGuard (AI)</h3>
+                            <p>AI-driven cybersecurity monitoring agent that analyzes network traffic for anomalous behavior and predicts potential cyber attacks in real-time.</p>
+                            <div style="margin-top: 10px; font-size: 0.8rem; color: var(--primary);">Python • Scikit-Learn • NetFilter</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="experience">
+                <div class="section-header center">
+                    <span class="small-heading">MY JOURNEY</span>
+                    <h2>Learning > Building > Shipping</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Present</h4>
+                        <h3>Dual Degree: B.Sc. CS & BS Data Science</h3>
+                        <p>B.Sc. Computer Science at Bharati Vidyapeeth & BS Data Science and Applications at IIT Madras.</p>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h4>Jun 2023</h4>
+                        <h3>Applied AI — Smart Operations Platform</h3>
+                        <p>Developed a comprehensive AI platform for retail operations, optimizing inventory by 30%.</p>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h4>Dec 2023</h4>
+                        <h3>Smart India Hackathon 2023</h3>
+                        <p>Led team to finals. Built an IoT and AI-driven predictive maintenance platform.</p>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>Mar 2024</h4>
+                        <h3>AI Agent & Applied Cybersecurity</h3>
+                        <p>Building automated agents for threat detection and analyzing network vulnerabilities.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <span class="small-heading">GET IN TOUCH</span>
+                        <h2>Let's Build Something Meaningful.</h2>
+                        <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span><a href="mailto:chavanatharv24@gmail.com">chavanatharv24@gmail.com</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span><a href="https://www.linkedin.com/in/atharv-chavan-225613307/" target="_blank">/in/atharv-chavan-225613307</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-brands fa-github"></i>
+                                <span><a href="https://github.com/chavanatharv24-a11y" target="_blank">/chavanatharv24-a11y</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form glass-card">
+                        <form action="https://formsubmit.co/chavanatharv24@gmail.com" method="POST">
+                            <div class="form-row">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <input type="text" name="_subject" placeholder="Subject" required>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <input type="hidden" name="_captcha" value="false">
+                            <button type="submit" class="btn btn-primary">SEND MESSAGE <i class="fa-regular fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer glass-card">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-code"></i> ATHARV <span>CHAVAN</span>
+                    </div>
+                    <p>I build accessible, high-performance digital experiences and intelligent algorithms.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/atharv-chavan-225613307/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/chavanatharv24-a11y" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>QUICK LINKS</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Skills</a>
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="footer-links">
+                    <h4>RESOURCES</h4>
+                    <a href="#experience">Journey</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Atharv Chavan. All Rights Reserved.</p>
+                <div class="legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
