@@ -5,7 +5,7 @@ const frameCount = 416;
 
 // Function to get the path of the image based on its index
 const currentFrame = index => (
-  `./public/images/${index.toString().padStart(4, '0')}.jpg`
+  `/images/${index.toString().padStart(4, '0')}.jpg`
 );
 
 const images = [];
